@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}                               
+
+.job_application{
+    margin-bottom:20px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 30px;
+    box-shadow: 4px 3px 5px rgba( 1, 1, 1, 0.1);
+    text-align: center;
+}
+
+.title_small{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: 20px;
+
+}
+
+
+.from_container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+input,select,textarea{
+    padding: 6px 10px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+button{
+    color: white;
+    background-color: red;
+    transition-duration: 0.3s;
+    
+}
+
+button:hover{
+    background-color: gray;
+    color: black;
+    border: 2px solid red;
+    transform: 0.7s ease-in;
+    cursor: pointer;
+}
+
+.textarea_control{
+    grid-column: 1/span 2;
+}
+
+.textarea_control textarea{
+    width: 100%;
+}
+
+@media (max-width:460px){
+    .textarea_control{
+        grid-column: 1/span 2;
+    }   
+}
